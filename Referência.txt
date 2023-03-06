@@ -1,0 +1,19 @@
+referencia: https://www.python.org/
+
+referencia: https://github.com/
+
+referencia: https://code.visualstudio.com/
+
+referencia: https://sqlitebrowser.org/
+
+referencia: https://www.mozilla.org/en-GB/firefox/developer/
+
+Python é uma linguagem de programação de alto nível, interpretada de script, imperativa, orientada a objetos, funcional, de tipagem dinâmica e forte.
+
+GitHub é uma plataforma de hospedagem de código-fonte e arquivos com controle de versão usando o Git.
+
+o Vscode é a principal ferramenta de trabalho do programador, usada para editar e testar seus códigos.
+
+SQLite é uma biblioteca em linguagem C que implementa uma base de dados SQL embutida.
+
+
