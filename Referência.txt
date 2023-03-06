@@ -16,4 +16,5 @@ o Vscode é a principal ferramenta de trabalho do programador, usada para editar
 
 SQLite é uma biblioteca em linguagem C que implementa uma base de dados SQL embutida.
 
-
+Protocolo HTTP:
+  O Hypertext Transfer Protocol, sigla HTTP é um protocolo de comunicação utilizado para sistemas de informação de hipermídia, distribuídos e colaborativos. Ele é a base para a comunicação de dados da World Wide Web. Hipertexto é o texto estruturado que utiliza ligações lógicas entre nós contendo texto.
