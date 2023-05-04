@@ -7,17 +7,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Treino</title>
     <link rel="stylesheet" href="estilo.css">
+    <script src="script.js"></script>
 </head>
 
 <body>
     <div>
         <h2>Primeira Div</h2>
-        <p> texto <span>né</span></p>
+        <p id="mensagem"><span> seu texto virá aqui !</span></p>
     </div>
     <div>
-        <h2>Segunda Div</h2>
-        <p><input type="text"></p>
-        <p><button>Um botão</button></p>
+        <h2>Mude o Parágrafo</h2>
+        <p><input type="text" id="input-mensagem"></p>
+        <p><button type="button" onclick="substituirTexto()">Substituir</button></p>
     </div>
 </body>
 
