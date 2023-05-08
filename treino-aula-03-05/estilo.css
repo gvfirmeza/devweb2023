@@ -1,20 +1,90 @@
 
 div {
-    border: 3px solid black;
-    padding: 1em;
-    border-radius: 7px;
-    width: fit-content;
-    text-align: center;
-    margin-bottom: 1em;
-    margin:auto;
-    margin-bottom: 1em;
-    margin-top: 1em;
+        border: 3px solid black;
+        padding: 1em;
+        border-radius: 7px;
+        width: fit-content;
+        text-align: center;
+        margin-bottom: 1em;
+        margin:auto;
+        margin-bottom: 1em;
+        margin-top: 1em;
+        background-color: rgb(127, 255, 180);
+    }
+    
+span {
+        font-size: 19px;
+        color: aquamarine;
+        background-color: rgb(43, 42, 42);
+        padding: 4px;
+        border-radius: 6px;
+    }
+
+@media screen and (min-width:728px) {
+    div {
+            border: 3px solid black;
+            padding: 1em;
+            border-radius: 7px;
+            width: fit-content;
+            text-align: center;
+            margin-bottom: 1em;
+            margin:auto;
+            margin-bottom: 1em;
+            margin-top: 1em;
+            background-color: rgb(243, 103, 103);
+    }
+        
+    span {
+            font-size: 19px;
+            color: aquamarine;
+            background-color: rgb(43, 42, 42);
+            padding: 4px;
+            border-radius: 6px;
+    }
 }
 
-span {
-    font-size: 19px;
-    color: aquamarine;
-    background-color: rgb(43, 42, 42);
-    padding: 4px;
-    border-radius: 6px;
+@media screen and (min-width:1024px) {
+    div {
+            border: 3px solid black;
+            padding: 1em;
+            border-radius: 7px;
+            width: fit-content;
+            text-align: center;
+            margin-bottom: 1em;
+            margin:auto;
+            margin-bottom: 1em;
+            margin-top: 1em;
+            background-color: rgb(105, 103, 243);
+    }
+        
+    span {
+            font-size: 19px;
+            color: aquamarine;
+            background-color: rgb(43, 42, 42);
+            padding: 4px;
+            border-radius: 6px;
+    }
+}
+
+@media screen and (min-width:1280px) {
+    div {
+            border: 3px solid black;
+            padding: 1em;
+            border-radius: 7px;
+            width: fit-content;
+            text-align: center;
+            margin-bottom: 1em;
+            margin:auto;
+            margin-bottom: 1em;
+            margin-top: 1em;
+            background-color: rgb(243, 103, 208);
+    }
+        
+    span {
+            font-size: 19px;
+            color: aquamarine;
+            background-color: rgb(43, 42, 42);
+            padding: 4px;
+            border-radius: 6px;
+    }
 }
