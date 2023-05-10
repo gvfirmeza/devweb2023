@@ -1,0 +1,50 @@
+
+html {
+    background-color: #14152d;
+    color: #DEFCFF;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns:auto auto auto auto ;
+    gap: 10px;
+    background-color: #db72df;
+    padding: 10px;
+  }
+
+  .grid > div {
+    background-color: rgba(0, 65, 90, 0.8);
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+  }
+
+  @media  (max-width: 800px) {
+    .grid {
+        display: grid;
+        grid-template-columns: auto auto ;
+        gap: 10px;
+        background-color: #db72df;
+        padding: 10px;
+      }
+    
+    .i1 , .i2 , .i3 , .i4 , .i5 , .i6 , .i7 , .i8 {
+        
+        height: 25vh;
+    }
+    
+  }
+
+  @media  (max-width: 480px) {
+    
+    .grid {
+    grid-template-columns: auto ;
+    }
+
+    .i1 , .i2 , .i3 , .i4 , .i5 , .i6 , .i7 , .i8 {
+        height: 25vh;
+    }
+    
+  }
