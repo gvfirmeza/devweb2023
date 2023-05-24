@@ -1,7 +1,8 @@
 //referencias
 
-const div_lista_imagens = document.getElementById("lista-imagens")
-const div_imagem = document.getElementById("imagem")
+const div_lista_imagens = document.getElementById("lista-imagens");
+const div_imagem = document.getElementById("imagem");
+const input_busca = document.getElementById("busca");
 
 //modificando array pra incluir o caminho das imagens
 
@@ -17,6 +18,14 @@ const cartao = ( clicada ) => {
     const imagem = document.createElement("img");
     const legenda = document.createElement("h5")
 
+    container.style.border = "solid black 2px"
+    container.style.borderRadius = "8px"
+    container.style.width = "fit-content"
+    container.style.textAlign = "center"
+    container.style.margin = "0 auto"
+    container.style.fontFamily = "sans-serif"
+    container.style.padding = "1em"
+
     imagem.src = clicada.src;
     imagem.width = 200;
 
@@ -25,6 +34,8 @@ const cartao = ( clicada ) => {
     container.appendChild(imagem);
     container.appendChild(legenda);
 
+    div_imagem.innerHTML = "";
+
     div_imagem.appendChild(container);
 } 
 
@@ -32,11 +43,11 @@ const cartao = ( clicada ) => {
 
 const manipula_evento = ( evento ) => {
     const imagem_clicada = evento.target;
-    div_imagem.innerHTML = "";
     cartao(imagem_clicada);
 }
 
 const criar_imagens = (entrada) => {
+    div_lista_imagens.innerHTML = "";
     entrada.forEach(
         ( ele ) => {
             const imagem_numero = document.createElement("img")
@@ -52,3 +63,16 @@ const criar_imagens = (entrada) => {
 }
 
 criar_imagens(minhas_imagens);
+
+// tratando entrada da busca
+
+const manipula_evento_busca = (e) => {
+    const string_busca = e.target.value;
+    const novo_array = minhas_imagens.filter(
+        (elemento) => {
+            return elemento.descrição.includes(string_busca);
+        });
+    criar_imagens(novo_array);
+}
+
+input_busca.onkeyup = manipula_evento_busca;
