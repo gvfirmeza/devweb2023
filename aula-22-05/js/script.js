@@ -67,7 +67,7 @@ criar_imagens(minhas_imagens);
 // tratando entrada da busca
 
 const manipula_evento_busca = (e) => {
-    const string_busca = e.target.value;
+    const string_busca = e.target.value.toLowerCase();
     const novo_array = minhas_imagens.filter(
         (elemento) => {
             return elemento.descrição.includes(string_busca);
