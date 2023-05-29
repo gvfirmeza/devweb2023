@@ -43,6 +43,8 @@ const cartao = ( clicada ) => {
 
 const manipula_evento = ( evento ) => {
     const imagem_clicada = evento.target;
+    document.cookie =`valor=${imagem_clicada.dataset.valor}`;
+    document.cookie =`nome=${imagem_clicada.dataset.nome}`;
     cartao(imagem_clicada);
 }
 
@@ -57,6 +59,9 @@ const criar_imagens = (entrada) => {
             imagem_numero.alt = ele.descrição
             imagem_numero.onclick = manipula_evento;
 
+            imagem_numero.dataset.nome = ele.nome;
+            imagem_numero.dataset.valor = ele.valor;
+
             div_lista_imagens.appendChild(imagem_numero);
         }
     )
@@ -67,12 +72,15 @@ criar_imagens(minhas_imagens);
 // tratando entrada da busca
 
 const manipula_evento_busca = (e) => {
-    const string_busca = e.target.value.toLowerCase();
+    const pre_string_busca = e.target.value;
+    const string_busca = pre_string_busca.toLowerCase();
+    if (string_busca.length > 3) {
     const novo_array = minhas_imagens.filter(
-        (elemento) => {
-            return elemento.descrição.includes(string_busca);
-        });
+            (elemento) => {
+                return elemento.descrição.includes(string_busca);
+            });
     criar_imagens(novo_array);
+    }
 }
 
 input_busca.onkeyup = manipula_evento_busca;

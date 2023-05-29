@@ -18,3 +18,4 @@ const minhas_imagens = [
 
     },
 ];
+
